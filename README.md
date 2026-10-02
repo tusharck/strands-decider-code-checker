@@ -266,3 +266,7 @@ with what this eval saw:
 **Recommendation:** use this port in `observe` mode to collect your own numbers, or keep
 the Jev version for enforcement. In enforce mode as configured, expect most finished work
 to bounce once and some to stop as "unresolved".
+
+## License
+
+MIT (see `LICENSE`). The model this downloads, [Strands Decider 2B](https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19), is Apache-2.0 and is not included in this repo.
