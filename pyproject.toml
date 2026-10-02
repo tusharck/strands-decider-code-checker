@@ -1,0 +1,18 @@
+[project]
+name = "strands-decider-code-checker"
+version = "0.1.0"
+description = "Check a coding agent's completion claims against real evidence, using Strands Decider 2B (local) for narrow judgments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "strands-decider>=0.1.0,<0.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+markers = ["live: runs the real Decider 2B model locally (downloads ~4.3 GB once); run with -m live"]
+addopts = "-m 'not live'"
